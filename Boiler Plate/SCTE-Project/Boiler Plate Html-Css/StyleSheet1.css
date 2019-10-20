@@ -1,0 +1,654 @@
+﻿/* Fonts --- START */
+@media all {
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-ExtraLightItalic.ttf") format("truetype");
+        font-weight: 200;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-Thin.ttf") format("truetype");
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-Regular.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-Black.ttf") format("truetype");
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-Medium.ttf") format("truetype");
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-SemiBold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-ThinItalic.ttf") format("truetype");
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-LightItalic.ttf") format("truetype");
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-Light.ttf") format("truetype");
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-SemiBoldItalic.ttf") format("truetype");
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-MediumItalic.ttf") format("truetype");
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-BoldItalic.ttf") format("truetype");
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-BlackItalic.ttf") format("truetype");
+        font-weight: 900;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-Italic.ttf") format("truetype");
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+        font-weight: 800;
+        font-style: italic;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-Bold.ttf") format("truetype");
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Montserrat";
+        src: url("/static/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    /* Fonts --- END */
+
+    body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .montserrat {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .pdr-direct-page header, .pdr-direct-page footer {
+        display: none !important
+    }
+
+    .header {
+        background-color: black;
+        opacity: 0.7;
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+    }
+
+    .header-div1 ul {
+        display: flex;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+    }
+   
+    
+    .menubar {
+        display: none;
+    }
+
+    header.container-fluid {
+        background-image: url(../Asserts/b2headerslider.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 85vh;
+        animation-name: slider;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+        animation-timing-function: step-end;
+    }
+
+    @keyframes slider {
+        0% {
+            background-image: url(../Asserts/b3headerslider.jpg);
+        }
+
+        50% {
+            background-image: url(../Asserts/b4.jpg);
+        }
+    }
+
+    .header-div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 6%;
+    }
+
+        .header-div2 h2 {
+            color: white;
+            padding: 2px;
+        }
+
+        .header-div2 input {
+            width: 550px;
+            height: 50px;
+            text-align: center;
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 3px;
+        }
+
+        .header-div2 p {
+            margin-top: 25px;
+            color: white;
+        }
+
+        .header-div2 a {
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        .header-div2 img {
+            margin-top: 50px;
+        }
+
+    .sect-1 {
+        margin-top: 20px;
+    }
+
+    .sect-1-div1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .sect-2 .container {
+        background-image: url(../Asserts/map.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 110vh;
+    }
+
+    .sect-2-div2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .sect-2-div2 ul {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            margin-top: 25%;
+        }
+
+            .sect-2-div2 ul .btn-orange {
+                background-color: #f17a28;
+                color: white;
+            }
+
+            .sect-2-div2 ul .btn-green {
+                background-color: #bfcd31;
+                color: white;
+            }
+
+            .sect-2-div2 ul .btn-grey {
+                background-color: gray;
+                color: white;
+            }
+
+                .sect-2-div2 ul .btn-grey:hover {
+                    background-color: #2a2b2c;
+                }
+
+    .sect-3-div3 {
+        display: flex;
+        justify-content: center;
+    }
+
+        .sect-3-div3 a {
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+    .sect-4-div4 {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .sect-5 {
+        background-color: #323b52;
+        padding: 40px;
+        margin-top: 20px;
+    }
+
+    .sect-5-div5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .sect-5-div5 input {
+            background-color: transparent;
+            color: white;
+            border-top: 1px solid #6f7484;
+            border-bottom: 1px solid #6f7484;
+            border-left: 1px solid #6f7484;
+            border-right: 1px solid #6f7484;
+            margin-top: 30px;
+            width: 300px;
+            height: 40px;
+        }
+
+        .sect-5-div5 h3 {
+            color: white;
+        }
+
+        .sect-5-div5 p {
+            color: white;
+            margin-top: 20px;
+            text-align: center;
+            opacity: 0.5;
+        }
+
+        .sect-5-div5 a {
+            margin-top: 30px;
+        }
+
+        .sect-5-div5 .btn-grey {
+            background-color: gray;
+            color: white;
+            width: 200px;
+            margin-top: 20px;
+        }
+
+            .sect-5-div5 .btn-grey:hover {
+                background-color: #2a2b2c;
+                color: white;
+            }
+
+
+    .sect-6-div6 .btn-cynide-dark {
+        background-color: #01c2c4;
+        color: white;
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .sect-6-div6 {
+        display: flex;
+        flex-direction: row;
+    }
+
+        .sect-6-div6 .subdiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .sect-6-div6 .subdiv h3, h6 {
+                text-align: center;
+            }
+
+            .sect-6-div6 .subdiv p {
+                text-align: center;
+            }
+
+        .sect-6-div6 img {
+            width: 100%;
+        }
+
+    .col-md-12.sect-6-div6 {
+        padding: 0;
+    }
+
+    .sect-6-div6 .btn-dark-blue {
+        background-color: #323b52;
+        color: white;
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .col-md-4.sudiv2 {
+        padding: 0;
+    }
+
+    .col-md-4 {
+        padding: 0;
+    }
+
+    .sect-7 {
+        padding: 40px;
+    }
+
+    .sect-7-div7 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin-top: 40px;
+    }
+
+        .sect-7-div7 p, h1, h6, h2 {
+            text-align: center;
+        }
+
+        .sect-7-div7 img {
+            margin-left: 70px;
+        }
+
+    .sect-8 {
+        background-color: #00b2b3;
+        padding: 30px;
+    }
+
+    .sect-8-div8 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col-md-8.sect-8-div8-subdiv1 {
+        display: flex;
+        justify-content: center;
+        padding-left: 30px;
+        color: white;
+    }
+
+        .col-md-8.sect-8-div8-subdiv1 h3 {
+            color: white;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+    .sect-8-div8-subdiv2 {
+    }
+
+        .sect-8-div8-subdiv2 select {
+            height: 46px;
+            border: 1px solid #a8d6e0;
+            cursor: pointer;
+            background-color: #019596;
+            font-size: 16px;
+            color: #e9ecef;
+        }
+
+        .sect-8-div8-subdiv2 button {
+            background-color: #04e3e6;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 9px;
+            margin-bottom: 3px;
+            color: #019596;
+        }
+
+    .sect-9 {
+        background-color: #2a2a3f;
+    }
+
+    .sect-9-div9 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .wrap {
+        padding: 50px 0px;
+    }
+
+    .sect-9 ul {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+        .sect-9 ul li:nth-child(1) {
+            font-family: Montserrat;
+            font-size: 13px;
+            color: #ffffff;
+            font-size: 13px;
+            padding-bottom: 20px;
+        }
+
+        .sect-9 ul li {
+            font-family: Montserrat;
+            font-size: 14px;
+            line-height: 1.69;
+            letter-spacing: normal;
+            color: #c8c8c8;
+        }
+
+            .sect-9 ul li a {
+                text-decoration: none;
+                color: #c8c8c8;
+            }
+
+    .sect-9 .inner ul li:last-child {
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 0.4px;
+        color: #8f8f8f;
+        padding-top: 20px;
+    }
+
+    .col-md-12.sect-9-div9 {
+        padding-left: 166px;
+    }
+
+    .sect-9-div9 .ulbtn {
+        padding: 0;
+    }
+
+    .sect-9-div9 .btn-orange {
+        background-color: #f17a28;
+        padding-right: 10px;
+    }
+
+        .sect-9-div9 .btn-orange:hover {
+            background-color: #c66522
+        }
+
+    .sect-9-div9 .ulbtn a {
+        text-decoration: none;
+    }
+
+    .sect-9-div9 .btn-grey-light {
+        background-color: #788c96;
+        padding-right: 10px;
+        margin-left: 20px;
+    }
+
+    .sect-9-div9 .btn {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .sect-10 {
+        padding: 35px;
+        background-color: #00aeef;
+    }
+
+    .sect-10-div10 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+        .sect-10-div10 h3 {
+            text-align: center;
+        }
+
+        .sect-10-div10 .btn {
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 50px;
+            background-color: #323b52;
+            text-align: center;
+            color: white;
+        }
+
+        .sect-10-div10 a {
+            text-decoration: none;
+        }
+
+    .sect-11 {
+        background-image: url(../Asserts/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+    }
+
+        .sect-11 .container-fluid .list-group {
+            list-style-type: none;
+        }
+
+        .sect-11 .div-1 {
+            margin-left: 55%;
+        }
+
+        .sect-11 .div-2 {
+            text-align: center;
+            margin-top: 4%;
+        }
+
+        .sect-11 .div-3 {
+            margin-top: 0.7%;
+        }
+    .carousel-inner img
+    {
+        width:100%;
+        height:100%;
+    }
+    ul.list1
+    {
+        display:none;
+    }
+    .backul{
+        display:none;
+    }
+    @media only screen and (max-width:1180px) {
+        .col-md-12.header {
+           
+            height: 50px;
+        }
+        .backul {
+            display:block;
+            background-color:darkblue;
+        }
+        ul.list1 {
+            display: block;
+            margin-top: 50px;
+            margin-left: -60px;
+            margin-right:0px;
+            list-style: none;
+            color: white;
+            background-color: darkblue;
+        }
+        ul.list2
+        {
+            display:none;
+        }
+
+        .menubar {
+            display: inline-block;
+            color: white;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .col-md-2 img {
+            margin-left:320%;
+            height: 25px;
+            padding: 0px;
+        }
+        .col-md-12.header-div2 h2
+        {
+            font-size:20px;
+        }
+        
+        .sect-6-div6
+        {
+            display:flex;
+            flex-direction:column;
+        }
+    }
+ 
+}
+    
